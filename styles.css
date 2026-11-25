@@ -575,6 +575,11 @@ body:has(#dark-mode:checked) .pagination a[aria-current="page"] {
   color: white;
 }
 
+body:has(#dark-mode:checked) .main-nav a[aria-current="page"],
+body:has(#dark-mode:checked) .mobile-nav a[aria-current="page"] {
+  color: #6085ff;
+}
+
 
 /* TABLET */
 
@@ -590,6 +595,17 @@ body:has(#dark-mode:checked) .pagination a[aria-current="page"] {
 @media (min-width: 800px) {
   .site-header {
     padding: 1rem 5%;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+    .main-nav a[aria-current="page"] {
+    color: #2250d0;
+    font-weight: bold;
   }
 
   .logo img {
